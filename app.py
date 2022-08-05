@@ -8,7 +8,7 @@ import pickle
 app = Flask(__name__)
 model = pickle.load(open('NLP_project_5_main.pkl','rb'))
 from sklearn.feature_extraction.text import CountVectorizer
-cv = CountVectorizer(max_features = 1500)
+cv = CountVectorizer(max_features = 2000)
 print(cv)
 corpus=pd.read_csv('corpus_dataset_project5.csv')
 corpus1=corpus['corpus'].tolist()
